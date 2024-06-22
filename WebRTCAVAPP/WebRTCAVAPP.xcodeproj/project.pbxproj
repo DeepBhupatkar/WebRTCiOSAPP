@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C0AEF152C27155700E0746D /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C0AEF142C27155700E0746D /* MainViewController.storyboard */; };
+		2C0AEF172C2728E100E0746D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0AEF162C2728E100E0746D /* MainViewController.swift */; };
 		2C520B992C26BDE300A68C87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C520B982C26BDE300A68C87 /* SceneDelegate.swift */; };
 		2C520BA02C26BDE400A68C87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C520B9F2C26BDE400A68C87 /* Assets.xcassets */; };
 		2C520BAC2C26BE6A00A68C87 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 2C520BAB2C26BE6A00A68C87 /* Starscream */; };
@@ -24,12 +25,12 @@
 		2C520BCE2C26C09C00A68C87 /* SignalingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C520BCD2C26C09C00A68C87 /* SignalingClient.swift */; };
 		2C520BD02C26C0B500A68C87 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C520BCF2C26C0B500A68C87 /* WebRTCClient.swift */; };
 		2C612AE82C26CA6400268FC0 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C612AE72C26CA6400268FC0 /* Config.swift */; };
-		2C9EC4F32C26E8E8006E9375 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9EC4F12C26E8E8006E9375 /* MainViewController.swift */; };
 		2C9EC4F52C26EA64006E9375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C520B962C26BDE300A68C87 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C0AEF142C27155700E0746D /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
+		2C0AEF162C2728E100E0746D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2C520B932C26BDE300A68C87 /* WebRTCAVAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebRTCAVAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C520B962C26BDE300A68C87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C520B982C26BDE300A68C87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +48,6 @@
 		2C520BCD2C26C09C00A68C87 /* SignalingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingClient.swift; sourceTree = "<group>"; };
 		2C520BCF2C26C0B500A68C87 /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
 		2C612AE72C26CA6400268FC0 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		2C9EC4F12C26E8E8006E9375 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../../../../../../../.Trash/MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +127,8 @@
 		2C520BBA2C26BF7000A68C87 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
-				2C9EC4F12C26E8E8006E9375 /* MainViewController.swift */,
 				2C0AEF142C27155700E0746D /* MainViewController.storyboard */,
+				2C0AEF162C2728E100E0746D /* MainViewController.swift */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
@@ -238,7 +238,7 @@
 				2C9EC4F52C26EA64006E9375 /* AppDelegate.swift in Sources */,
 				2C520BB92C26BF2500A68C87 /* SessionDescription.swift in Sources */,
 				2C520BCC2C26C07F00A68C87 /* Message.swift in Sources */,
-				2C9EC4F32C26E8E8006E9375 /* MainViewController.swift in Sources */,
+				2C0AEF172C2728E100E0746D /* MainViewController.swift in Sources */,
 				2C520BCE2C26C09C00A68C87 /* SignalingClient.swift in Sources */,
 				2C520BB72C26BF0D00A68C87 /* RTCStates.swift in Sources */,
 				2C520B992C26BDE300A68C87 /* SceneDelegate.swift in Sources */,
