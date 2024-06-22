@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,14 +13,107 @@
             <objects>
                 <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNQ-fn-S2a">
+                                <rect key="frame" x="52" y="75" width="291" height="28"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Welcome to WebRTC App">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name="Arial-ItalicMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Signaling status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quf-Lj-OKn">
+                                <rect key="frame" x="52" y="162" width="125.99999999999997" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="{status}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0E-H5-Dwc">
+                                <rect key="frame" x="215" y="162" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WebRTC Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2e7-B1-aVg">
+                                <rect key="frame" x="52" y="216" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="{WebRTC Status}" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhr-hu-fuc">
+                                <rect key="frame" x="207" y="216" width="141" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2s-of-c8A">
+                                <rect key="frame" x="232" y="409" width="123.99999999999997" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Send Answer"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uh5-Ke-URk">
+                                <rect key="frame" x="263" y="647" width="63" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Mute"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAJ-7n-L0F">
+                                <rect key="frame" x="73" y="559" width="68" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Video"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8D-fA-uFJ">
+                                <rect key="frame" x="63" y="647" width="86.333333333333343" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Speaker"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3EC-KG-DXK">
+                                <rect key="frame" x="245" y="559" width="103.33333333333331" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Send Data"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhR-m7-6Ks">
+                                <rect key="frame" x="66" y="408" width="111" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Send Offer "/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3EC-KG-DXK" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="7S0-4Z-wiY"/>
+                            <constraint firstItem="hhr-hu-fuc" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Dob-vD-ofT"/>
+                            <constraint firstItem="PNQ-fn-S2a" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="FXc-aK-sJ9"/>
+                            <constraint firstItem="PAJ-7n-L0F" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="GoV-lB-CYA"/>
+                            <constraint firstItem="3EC-KG-DXK" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Np4-Bw-Dgc"/>
+                            <constraint firstItem="t0E-H5-Dwc" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="SRG-8N-51D"/>
+                            <constraint firstItem="vhR-m7-6Ks" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Td0-LZ-9A3"/>
+                            <constraint firstItem="F8D-fA-uFJ" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Tni-8m-ccT"/>
+                            <constraint firstItem="hhr-hu-fuc" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="UvQ-6b-LiK"/>
+                            <constraint firstItem="b2s-of-c8A" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="VQw-Kr-4Dh"/>
+                            <constraint firstItem="b2s-of-c8A" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="XEh-zZ-5pS"/>
+                            <constraint firstItem="F8D-fA-uFJ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="YcT-Zi-Ddo"/>
+                            <constraint firstItem="t0E-H5-Dwc" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="bp0-PS-BmK"/>
+                            <constraint firstItem="vhR-m7-6Ks" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="cWk-Pl-96n"/>
+                            <constraint firstItem="quf-Lj-OKn" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="fbF-kq-g5P"/>
+                            <constraint firstItem="Uh5-Ke-URk" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="gLd-5S-KEe"/>
+                            <constraint firstItem="PAJ-7n-L0F" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="jd2-vN-qng"/>
+                            <constraint firstItem="Uh5-Ke-URk" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="lC6-4Y-fAZ"/>
+                            <constraint firstItem="2e7-B1-aVg" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="mvh-Ab-c5Q"/>
+                            <constraint firstItem="PNQ-fn-S2a" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="nHR-N3-yGX"/>
+                            <constraint firstItem="quf-Lj-OKn" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="obc-HK-G9P"/>
+                            <constraint firstItem="2e7-B1-aVg" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vzZ-Ig-SJb"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="41.984732824427482" y="-34.507042253521128"/>
         </scene>
     </scenes>
     <resources>
