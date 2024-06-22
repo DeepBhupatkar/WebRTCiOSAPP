@@ -5,7 +5,6 @@
 //  Created by DEEP BHUPATKAR on 22/06/24.
 //
 
-import Foundation
 import UIKit
 import WebRTC
 
@@ -16,7 +15,7 @@ class VideoViewController: UIViewController {
 
     init(webRTCClient: WebRTCClient) {
         self.webRTCClient = webRTCClient
-        super.init(nibName: String(describing: VideoViewController.self), bundle: Bundle.main)
+        super.init(nibName: nil, bundle: nil)
     }
     
     @available(*, unavailable)
@@ -31,7 +30,6 @@ class VideoViewController: UIViewController {
         let remoteRenderer = RTCMTLVideoView(frame: self.view.frame)
         localRenderer.videoContentMode = .scaleAspectFill
         remoteRenderer.videoContentMode = .scaleAspectFill
-        
 
         self.webRTCClient.startCaptureLocalVideo(renderer: localRenderer)
         self.webRTCClient.renderRemoteVideo(to: remoteRenderer)
@@ -59,6 +57,6 @@ class VideoViewController: UIViewController {
     }
     
     @IBAction private func backDidTap(_ sender: Any) {
-        self.dismiss(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
 }

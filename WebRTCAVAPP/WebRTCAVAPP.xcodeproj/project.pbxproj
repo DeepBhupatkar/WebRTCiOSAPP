@@ -7,19 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C520B972C26BDE300A68C87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C520B962C26BDE300A68C87 /* AppDelegate.swift */; };
+		2C0AEF152C27155700E0746D /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C0AEF142C27155700E0746D /* MainViewController.storyboard */; };
 		2C520B992C26BDE300A68C87 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C520B982C26BDE300A68C87 /* SceneDelegate.swift */; };
 		2C520BA02C26BDE400A68C87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C520B9F2C26BDE400A68C87 /* Assets.xcassets */; };
-		2C520BA32C26BDE400A68C87 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2C520BA22C26BDE400A68C87 /* Base */; };
 		2C520BAC2C26BE6A00A68C87 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 2C520BAB2C26BE6A00A68C87 /* Starscream */; };
 		2C520BAF2C26BE7700A68C87 /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = 2C520BAE2C26BE7700A68C87 /* WebRTC */; };
 		2C520BB42C26BEE900A68C87 /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C520BB32C26BEE900A68C87 /* IceCandidate.swift */; };
 		2C520BB72C26BF0D00A68C87 /* RTCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C520BB62C26BF0D00A68C87 /* RTCStates.swift */; };
 		2C520BB92C26BF2500A68C87 /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C520BB82C26BF2500A68C87 /* SessionDescription.swift */; };
-		2C520BBD2C26BFA800A68C87 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C520BBC2C26BFA800A68C87 /* MainViewController.swift */; };
 		2C520BBF2C26BFC800A68C87 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C520BBE2C26BFC800A68C87 /* VideoViewController.swift */; };
 		2C520BC12C26BFE400A68C87 /* VideoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C520BC02C26BFE400A68C87 /* VideoViewController.storyboard */; };
-		2C520BC32C26C00500A68C87 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C520BC22C26C00500A68C87 /* MainViewController.storyboard */; };
 		2C520BC62C26C04B00A68C87 /* NativeWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C520BC52C26C04B00A68C87 /* NativeWebSocket.swift */; };
 		2C520BC82C26C05900A68C87 /* StarscreamProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C520BC72C26C05900A68C87 /* StarscreamProvider.swift */; };
 		2C520BCA2C26C06E00A68C87 /* WebSocketProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C520BC92C26C06E00A68C87 /* WebSocketProvider.swift */; };
@@ -27,22 +24,22 @@
 		2C520BCE2C26C09C00A68C87 /* SignalingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C520BCD2C26C09C00A68C87 /* SignalingClient.swift */; };
 		2C520BD02C26C0B500A68C87 /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C520BCF2C26C0B500A68C87 /* WebRTCClient.swift */; };
 		2C612AE82C26CA6400268FC0 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C612AE72C26CA6400268FC0 /* Config.swift */; };
+		2C9EC4F32C26E8E8006E9375 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9EC4F12C26E8E8006E9375 /* MainViewController.swift */; };
+		2C9EC4F52C26EA64006E9375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C520B962C26BDE300A68C87 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C0AEF142C27155700E0746D /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
 		2C520B932C26BDE300A68C87 /* WebRTCAVAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebRTCAVAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C520B962C26BDE300A68C87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C520B982C26BDE300A68C87 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2C520B9F2C26BDE400A68C87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2C520BA22C26BDE400A68C87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C520BA42C26BDE400A68C87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C520BB32C26BEE900A68C87 /* IceCandidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCandidate.swift; sourceTree = "<group>"; };
 		2C520BB62C26BF0D00A68C87 /* RTCStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTCStates.swift; sourceTree = "<group>"; };
 		2C520BB82C26BF2500A68C87 /* SessionDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
-		2C520BBC2C26BFA800A68C87 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2C520BBE2C26BFC800A68C87 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		2C520BC02C26BFE400A68C87 /* VideoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VideoViewController.storyboard; sourceTree = "<group>"; };
-		2C520BC22C26C00500A68C87 /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
 		2C520BC52C26C04B00A68C87 /* NativeWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeWebSocket.swift; sourceTree = "<group>"; };
 		2C520BC72C26C05900A68C87 /* StarscreamProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarscreamProvider.swift; sourceTree = "<group>"; };
 		2C520BC92C26C06E00A68C87 /* WebSocketProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketProvider.swift; sourceTree = "<group>"; };
@@ -50,6 +47,7 @@
 		2C520BCD2C26C09C00A68C87 /* SignalingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingClient.swift; sourceTree = "<group>"; };
 		2C520BCF2C26C0B500A68C87 /* WebRTCClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCClient.swift; sourceTree = "<group>"; };
 		2C612AE72C26CA6400268FC0 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		2C9EC4F12C26E8E8006E9375 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../../../../../../../.Trash/MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +88,6 @@
 				2C520B962C26BDE300A68C87 /* AppDelegate.swift */,
 				2C520B982C26BDE300A68C87 /* SceneDelegate.swift */,
 				2C520B9F2C26BDE400A68C87 /* Assets.xcassets */,
-				2C520BA12C26BDE400A68C87 /* LaunchScreen.storyboard */,
 				2C520BA42C26BDE400A68C87 /* Info.plist */,
 				2C612AE72C26CA6400268FC0 /* Config.swift */,
 			);
@@ -130,8 +127,8 @@
 		2C520BBA2C26BF7000A68C87 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
-				2C520BBC2C26BFA800A68C87 /* MainViewController.swift */,
-				2C520BC22C26C00500A68C87 /* MainViewController.storyboard */,
+				2C9EC4F12C26E8E8006E9375 /* MainViewController.swift */,
+				2C0AEF142C27155700E0746D /* MainViewController.storyboard */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
@@ -221,9 +218,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C520BC32C26C00500A68C87 /* MainViewController.storyboard in Resources */,
 				2C520BA02C26BDE400A68C87 /* Assets.xcassets in Resources */,
-				2C520BA32C26BDE400A68C87 /* Base in Resources */,
+				2C0AEF152C27155700E0746D /* MainViewController.storyboard in Resources */,
 				2C520BC12C26BFE400A68C87 /* VideoViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,12 +233,12 @@
 			files = (
 				2C520BCA2C26C06E00A68C87 /* WebSocketProvider.swift in Sources */,
 				2C520BC82C26C05900A68C87 /* StarscreamProvider.swift in Sources */,
-				2C520BBD2C26BFA800A68C87 /* MainViewController.swift in Sources */,
 				2C612AE82C26CA6400268FC0 /* Config.swift in Sources */,
 				2C520BBF2C26BFC800A68C87 /* VideoViewController.swift in Sources */,
+				2C9EC4F52C26EA64006E9375 /* AppDelegate.swift in Sources */,
 				2C520BB92C26BF2500A68C87 /* SessionDescription.swift in Sources */,
-				2C520B972C26BDE300A68C87 /* AppDelegate.swift in Sources */,
 				2C520BCC2C26C07F00A68C87 /* Message.swift in Sources */,
+				2C9EC4F32C26E8E8006E9375 /* MainViewController.swift in Sources */,
 				2C520BCE2C26C09C00A68C87 /* SignalingClient.swift in Sources */,
 				2C520BB72C26BF0D00A68C87 /* RTCStates.swift in Sources */,
 				2C520B992C26BDE300A68C87 /* SceneDelegate.swift in Sources */,
@@ -253,17 +249,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2C520BA12C26BDE400A68C87 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C520BA22C26BDE400A68C87 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2C520BA52C26BDE400A68C87 /* Debug */ = {
@@ -395,8 +380,9 @@
 				DEVELOPMENT_TEAM = 826696Y524;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WebRTCAVAPP/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow app to access camera ";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow app to access microphone";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
@@ -423,8 +409,9 @@
 				DEVELOPMENT_TEAM = 826696Y524;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WebRTCAVAPP/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Allow app to access camera ";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow app to access microphone";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
