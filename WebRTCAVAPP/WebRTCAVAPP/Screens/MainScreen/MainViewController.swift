@@ -120,8 +120,7 @@ class MainViewController: UIViewController {
             self.signalClient.send(sdp: localSdp)
         }
     }
-    @IBAction func answerButtonTapped(_ sender: Any) {
-    }
+   
     
     @IBAction private func speakerButtonTapped(_ sender: UIButton) {
         if self.speakerOn {
