@@ -1,2 +1,2 @@
 # WebRTCiOSAPP
-Implementing WebRTC in an iOS Swift App 
+Implementing WebRTC in an iOS Swift App.
